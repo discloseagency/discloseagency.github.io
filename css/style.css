@@ -1,0 +1,367 @@
+/* Color Variables */
+:root {
+      --main-text-color: rgba(0, 0, 0, 0.9);
+      --secondary-logo-color: #e74c3c;
+}
+
+/* General CSS */
+html {
+      scroll-behavior: smooth;
+}
+body {
+      margin: 0 auto;.
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: var(--main-text-color);
+      min-width: 440px;
+      max-width: 1920px;
+      
+}
+
+a {
+      text-decoration: none;
+      color: inherit;
+}
+
+ul, ol {
+      list-style: none;
+}
+
+
+/* Wrap */
+.wrap {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+}
+
+
+/* Content Banners */
+.banner-title {
+      text-align: center;
+      font-size: 4em;
+      padding: 50px;
+      font-weight: bold;
+}
+
+.baner-subtitle {
+      text-align: center;
+      font-size: 3em;
+      padding: 50px;
+      font-style: italic;
+      font-weight: 400;
+}
+
+/* First */
+.welcome {
+      min-height: 100vh;
+      width: 100%;
+      background-color: black;
+      background-image: url("https://raw.githubusercontent.com/discloseagency/design_v2/main/imgs/bg-welcome.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+}
+
+
+.logo-text {
+      color: white;
+      font-family: 'poppins';
+      font-size: 5em;
+      font-weight: bold;
+      padding: 100px;
+}
+
+.logo-red {
+      color: var(--secondary-logo-color);
+}
+
+.welcome_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.welcome_content h2 {
+      font-size: 3em;
+      font-weight: bold;
+      color: white;
+}
+
+.welcome_content h3 {
+      font-size: 2em;
+      color: white;
+      line-height: 2em;
+      font-style: italic;
+}
+
+.proposta {
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--secondary-logo-color);
+      color: var(--main-text-color);
+      font-weight: bold;
+      font-size: 1.5em;
+      margin: 20px 0px;
+      padding: 20px;
+      transition: 0.5s;
+  }
+  
+  .proposta:hover {
+      transition: 0.5s;
+      color: var(--secondary-logo-color);
+      background-color: var(--main-text-color);
+  }
+
+/* Quem Somos */
+.quem-somos {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+}
+
+.left {
+      background-color: var(--secondary-logo-color);
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+}
+
+.right {
+      width: 50%;
+      display: flex;
+      color: var(--main-text-color);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.right p {
+      padding: 30px 0;
+      width: 80%;
+      line-height: 2em;
+      font-size: 1.5em;
+}
+
+.right p:first-child {
+      font-weight: bold;
+      font-size: 2em;
+}
+
+/* Serviços */
+.servicos {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--main-text-color);
+      min-height: 100vh;
+}
+.servicos .banner-title {
+      color: white;
+}
+.servicos-full-width {
+      width: 100%;
+      height: 65%;
+      display: flex;
+      flex-direction: row;
+}
+  
+.dark-color{
+      color: var(--main-text-color);  
+      text-align: center;
+}
+  
+.card {
+      margin: 0 auto;
+      width: 33%;
+      margin: 1.7%;
+      max-width: 100%;
+      min-height: 500px;
+      box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      background-size: cover;
+}
+  
+  
+.info {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-color: #fff;
+      transform: translateY(100%)
+        translateY(-88px)
+        translateZ(0);
+      transition: transform 0.5s ease-out;
+}
+    
+.info:before {
+      z-index: -1;
+      display: block;
+      position: absolute;
+      content: ' ';
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      opacity: 0.25;
+      transform: translateY(-100%)
+        translateY(88px)
+        translateZ(0);
+      transition: transform 0.5s ease-out;
+}
+    
+.card:hover .info, .card:hover .info:before {
+      transform: translateY(0) translateZ(0);
+}
+    
+.title {
+      margin: 0;
+      padding: 24px;
+      font-size: 2.2em;
+      font-weight: bold;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.87);
+}
+    
+.description {
+      margin: 0;
+      padding: 0 24px 24px;
+      font-size: 1.2em;
+      font-weight: 500;
+      line-height: 1.5;
+}
+
+.public-relations {
+      background-image: url("https://raw.githubusercontent.com/discloseagency/discloseagency.github.io/master/img/bg-pr.jpg");
+}
+
+.content-marketing {
+      background-image: url("https://raw.githubusercontent.com/discloseagency/discloseagency.github.io/master/img/bg-content.jpg");
+}
+
+.influencers {
+      background-image: url("https://raw.githubusercontent.com/discloseagency/discloseagency.github.io/master/img/bg-influencers.jpg");
+}
+
+/* Quem faz */
+.quem-faz {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+.quem-faz h3 {
+      font-style: normal;
+      color: var(--main-text-color);
+}
+
+.quem-faz-wrap {
+      display: flex;
+      flex-direction: row;
+}
+
+.quem-faz-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+}
+
+.quem-faz-right p {
+      padding: 20px 0px;
+      width: 50%;
+      line-height: 2em;
+      font-size: 1.5em;
+      color: var(--main-text-color);
+}
+
+.quem-faz-img {
+      margin-top: 50px;
+      background-image: url("https://raw.githubusercontent.com/discloseagency/discloseagency.github.io/master/img/bg-michel.jpg");
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+}
+
+/* Contato */
+.contato {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+}
+
+.contato-left {
+      width: 50%;
+      background-color: var(--secondary-logo-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+}
+
+.contato-right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+}
+
+  
+.form-wrap {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+  }
+input, textarea {
+      display: block;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      width: 40vw;
+      background-color: #dfe6e9;
+      border: none;
+      padding: 10px;
+      outline: none;
+      border: solid 2px white;
+  }
+  
+  textarea {
+      resize: none;
+  }
+  
+  
+  input:focus, textarea:focus {
+      border: solid 2px var(--secondary-logo-color);
+  }
+  
+  textarea {
+      height: 200px;
+      overflow: hidden;
+  }
+
+.form-wrap h3 {
+      color: var(--main-text-color);
+      font-style: normal;
+}

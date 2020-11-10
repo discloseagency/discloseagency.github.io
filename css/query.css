@@ -1,0 +1,70 @@
+@media screen and (min-width: 1660px) {
+      html, body {
+          font-size: 17px;
+      }
+  
+      @media screen and (min-width: 1920px) {
+          html, body {
+              font-size: 18px;
+          }
+      
+      }
+  }
+  
+
+  @media screen and (max-width: 1000px) {
+      html, body {
+            font-size: 12px;
+        }
+      .welcome {
+            text-align: center;
+
+      }
+      .quem-somos {
+            flex-direction: column;
+      }
+
+      .left {
+            width: 100%;
+      }
+      .right {
+            width: 100%;
+      }
+
+      .right p:last-child {
+            padding-bottom: 50px;
+      }
+
+      .servicos-full-width {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .card {
+            width: 80%;
+      }
+
+      .quem-faz-right p {
+            width: 80%;
+      }
+
+      .contato {
+            flex-direction: column;
+      }
+
+      .contato-left, .contato-right {
+            width: 100%;
+      }
+
+      input, textarea {
+            width: 80%;
+      }
+      .title {
+            font-size: 2.8em;
+      }
+      .logo-text {
+            padding: 120px 0;
+      }
+  }
+  
